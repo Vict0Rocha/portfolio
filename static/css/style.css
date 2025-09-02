@@ -333,11 +333,20 @@ span {
     width: 100%;
 }
 
+.title-contact h1 {
+    margin: 2rem 0;
+    font-size: 1.8em;
+    color: var(--segundary-color);
+}
+
 .form input {
     width: 100%;
     margin: 0.8rem 0;
     height: 5rem;
+    color: var(--white);
+    padding-left: 1.3rem;
     background-color: transparent;
+    font-size: 1.8rem;
     border: none;
     border-bottom: 1px solid rgba(73, 143, 235, 0.233);
     outline: none;
@@ -346,20 +355,33 @@ span {
 .form textarea {
     width: 100%;
     margin: 0.8rem 0;
-    height: 15rem;
+    height: 20rem;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding-left: 1.3rem;
     background-color: transparent;
+    font-family: Space Grotesk, sans-serif;
     border: none;
     border-bottom: 1px solid rgba(73, 143, 235, 0.233);
     outline: none;
 }
 
+.button-contact {
+    font-size: 2rem;
+    padding: 0.8rem;
+    color: var(--white);
+    border-radius: 5px;
+    background-color: #1a224285;
+    border: none;
+    transition: all 200ms ease-in-out;
+}
 
 .form input::placeholder {
-    color: var(--white);
+    color: #ffffff50;
 }
 
 .form textarea::placeholder {
-    color: var(--white);
+    color: #ffffff50;
 }
 
 .form input:focus,
@@ -368,7 +390,11 @@ span {
     text-decoration: none;
 }
 
-
+.button-contact:hover {
+    background-color: #1a2242;
+    cursor: pointer;
+    transform: scale(1.05);
+}
 
 .menu h2:hover {
     color: var(--white);

@@ -1,0 +1,392 @@
+:root {
+    /* --gradiente: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); */
+    --primary: #090d1b;
+    --segundary-color: #3786fc;
+    --tertiary-color: #b9d7fd;
+    --white: #ffffff;
+    --overlay-color: #1a2242;
+    --gap: 3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Space Grotesk, sans-serif;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+hr {
+    margin-top: 2rem;
+    border-color: var(--segundary-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span {
+    color: var(--segundary-color);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    padding-right: 2rem;
+    font-size: 1.8rem;
+    transition: all 300ms ease-in-out;
+    position: relative;
+}
+
+.menu h2 {
+    font-size: 1.8rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--segundary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu-bg {
+    color: var(--white);
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--segundary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover:after {
+    width: 50%;
+    left: 25%;
+}
+
+.name {
+    text-transform: uppercase;
+    color: var(--segundary-color);
+    font-size: 6rem;
+}
+
+.main-bg {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.white-bg {
+    background-color: #f1f1f1;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.space {
+    padding: 7rem;
+}
+
+.main-content {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    justify-items: center;
+    text-align: center;
+}
+
+.home-button {
+    display: flex;
+    gap: var(--gap);
+    margin-top: 2.5rem;
+}
+
+.link-button {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--white);
+    padding: 1.7rem;
+    border: 3px solid rgba(56, 136, 240, 0.459);
+    transition: all 200ms ease-in-out;
+    border-radius: 5px;
+}
+
+.link-button:hover {
+    border: 3px solid rgba(56, 136, 240, 0.459);
+    background-color: rgba(56, 136, 240, 0.192);
+    box-shadow: rgba(56, 136, 240, 0.192) 3px 3px 10px;
+}
+
+
+.home-content-img .home {
+    max-width: 80%;
+    width: 36rem;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(56, 136, 240, 0.459) 5px 5px 25px;
+    transition: all 200ms ease-in-out;
+}
+
+.p-about-me {
+    font-size: 2.1rem;
+}
+
+.main-about-me {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-me-text {
+    flex: 1.5;
+    padding: 2rem;
+    line-height: 1.7;
+}
+
+.about-me-text h1 {
+    margin-bottom: 2.5rem;
+}
+
+.about-me-img {
+    flex: 1;
+    padding: 2rem;
+}
+
+.about-me-img img {
+    width: 100%;
+}
+
+.hr-projects {
+    border-color: rgba(73, 143, 235, 0.144);
+}
+
+.content-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem 0;
+    line-height: 1.7;
+    transition: all 150ms ease-in-out;
+}
+
+.skills {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1-projects {
+    margin: 5rem 0 2rem 0;
+}
+
+.title-project {
+    font-size: 2.5rem;
+    color: var(--segundary-color);
+}
+
+.home-content-img .home:hover {
+    box-shadow: rgba(56, 136, 240, 0.548) 5px 5px 40px;
+}
+
+.home-content-img {
+    justify-self: start;
+}
+
+.project-text {
+    margin-bottom: 2rem;
+}
+
+.skills h2 {
+    font-size: 4rem;
+    margin-top: -1.5rem;
+}
+
+.card-skill {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    margin: 1rem 1.3rem;
+}
+
+.card-skill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 7.3rem;
+    padding: 0.8rem;
+    letter-spacing: 0.2rem;
+    border-radius: 10px;
+    background-color: var(--overlay-color);
+    box-shadow: rgba(56, 136, 240, 0.24) 0px 0px 10px;
+    transition: opacity 200ms ease-in-out;
+    opacity: 0;
+}
+
+.card-skill:hover .overlay-text {
+    opacity: 1;
+}
+
+.overlay-skill {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.project-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.steck {
+    width: 2.5rem;
+    margin: 0 0.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.img-git {
+    width: 2.5rem;
+    margin-right: 1.5rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    box-shadow: rgba(56, 136, 240, 0.548) 2px 2px 50px;
+    transition: all 300ms ease-in-out;
+}
+
+.home-content-text,
+.home-content-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.contact {
+    width: 100%;
+}
+
+.form input {
+    width: 100%;
+    margin: 0.8rem 0;
+    height: 5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(73, 143, 235, 0.233);
+    outline: none;
+}
+
+.form textarea {
+    width: 100%;
+    margin: 0.8rem 0;
+    height: 15rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(73, 143, 235, 0.233);
+    outline: none;
+}
+
+
+.form input::placeholder {
+    color: var(--white);
+}
+
+.form textarea::placeholder {
+    color: var(--white);
+}
+
+.form input:focus,
+.form textarea:focus {
+    box-shadow: rgba(0, 100, 180, 0.5) 1px 1px;
+    text-decoration: none;
+}
+
+
+
+.menu h2:hover {
+    color: var(--white);
+}
+
+.menu ul li a:hover {
+    color: var(--segundary-color);
+}
+
+.content-projects:hover {
+    transform: scale(1.01);
+}
+
+.img-git:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.steck:hover {
+    transform: scale(1.3);
+}

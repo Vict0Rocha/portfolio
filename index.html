@@ -240,23 +240,24 @@ Oque eu já fiz.
 
             <section id="contact" class="main-bg section space">
                 <div class="main-content contact">
-                    <form action="" method="post" class="form">
+                    <form action="https://formsubmit.co/victorhugocordeirocha@gmail.com" method="post" class="form">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
                         <div class="title-contact">
                             <h1>Entre em contato</h1>
                         </div>
                         <div class="name-contact">
                             <label for="name"></label>
-                            <input type="text" name="name" placeholder="Nome">
+                            <input type="text" name="name" placeholder="Nome" required>
                         </div>
                         <div class="email-contact">
                             <label for="email"></label>
-                            <input type="email" placeholder="E-mail">
+                            <input type="email" name="email" placeholder="E-mail" required>
                         </div>
                         <div class="message-contact">
                             <label for="message"></label>
-                            <textarea name="message" placeholder="Mensagem"></textarea>
+                            <textarea name="message" placeholder="Mensagem" required></textarea>
                         </div>
-                        <button class="button-contact" type="submit">Enviar</button>
+                        <button class="button-contact" type="submit" required>Enviar</button>
                     </form>
                 </div>
             </section>

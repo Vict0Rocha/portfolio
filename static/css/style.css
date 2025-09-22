@@ -327,6 +327,7 @@ span {
 
 .card-skill:hover .overlay-text {
     opacity: 1;
+    z-index: 1;
 }
 
 .overlay-skill {
@@ -454,4 +455,57 @@ span {
 
 .steck:hover {
     transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .space {
+        padding: 4rem 2rem;
+    }
+
+    .name {
+        font-size: 4.5rem;
+    }
+
+    .menu nav ul {
+        display: none;
+    }
+
+    .menu {
+        padding: 0;
+    }
+
+    .grid-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .home-content-text {
+        margin-bottom: 3rem;
+    }
+
+    .home-content-img {
+        max-width: 70%;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .main-about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-text {
+        line-height: 1.5;
+    }
+
+    .project-img {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
 }

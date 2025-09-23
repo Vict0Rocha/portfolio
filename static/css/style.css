@@ -457,6 +457,26 @@ span {
     transform: scale(1.3);
 }
 
+@media all and (min-width: 769px) and (max-width: 1000px) {
+    html {
+        font-size: 58%;
+    }
+
+    .main-about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-text {
+        line-height: 1.5;
+    }
+
+    .about-me-img img {
+        width: 70%;
+    }
+
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 55%;
@@ -483,10 +503,6 @@ span {
         text-align: center;
     }
 
-    .home-content-text {
-        margin-bottom: 3rem;
-    }
-
     .home-content-img {
         max-width: 70%;
         align-items: center;
@@ -495,11 +511,14 @@ span {
 
     .main-about-me {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .about-me-text {
         line-height: 1.5;
+        justify-content: center;
+        margin-top: 10rem;
     }
 
     .project-img {
@@ -507,5 +526,26 @@ span {
         justify-content: space-between;
     }
 
+    .aling-skill-mobile {
+        justify-content: center;
+    }
+
+
+    .home-content-text {
+        margin-top: 4rem;
+        padding: 0 3rem;
+    }
+
+    .link-button {
+        font-size: 1.7rem;
+    }
+
+    .home-button {
+        justify-content: center;
+    }
+
+    .about-me-img {
+        width: 80%;
+    }
 
 }

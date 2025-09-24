@@ -1,6 +1,6 @@
 :root {
-    /* --gradiente: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); */
     --primary: #090d1b;
+    --primary-light: #0d1225;
     --segundary-color: #3786fc;
     --tertiary-color: #b9d7fd;
     --white: #ffffff;
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: Space Grotesk, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 2rem;
 }
 
@@ -151,6 +151,11 @@ span {
     color: var(--white);
 }
 
+.main-bg-light {
+    background: var(--primary-light);
+    color: var(--white);
+}
+
 .white-bg {
     background-color: #f1f1f1;
 }
@@ -184,13 +189,59 @@ span {
 }
 
 .link-button {
-    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 2rem;
     color: var(--white);
-    padding: 1.7rem;
-    border: 3px solid rgba(56, 136, 240, 0.459);
+    padding: 1.7rem 2.5rem;
+    border: 2px solid rgba(56, 136, 240, 0.459);
     transition: all 200ms ease-in-out;
     border-radius: 5px;
+    background-color: transparent;
+}
+
+.link-button.primary {
+    gap: 1rem;
+    background-image: linear-gradient(to right, #141e3b, var(--segundary-color));
+    color: var(--white);
+    font-weight: 550;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-button.primary svg {
+    transition: transform 0.3s ease-in-out;
+    stroke: var(--white);
+}
+
+.link-button.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 7px 7px 15px rgba(55, 134, 252, 0.3);
+    background-color: transparent;
+}
+
+.link-button.primary:hover svg {
+    transform: translateX(7px);
+}
+
+.icon-home-github {
+    margin-top: 0.7rem;
+    font-size: 4.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.icon-home-linkedin {
+    transition: all 300ms ease-in-out;
+    transform: translateY(-13px);
+}
+
+.icon-home-github:hover {
+    transform: translateY(-3px);
+}
+
+.icon-home-linkedin:hover {
+    transform: translateY(-16px);
 }
 
 .link-button-thanks {
@@ -205,11 +256,9 @@ span {
     margin: 3rem auto 0 auto;
 }
 
-.link-button:hover,
-.link-button-thanks:hover {
-    border: 3px solid rgba(56, 136, 240, 0.459);
-    background-color: rgba(56, 136, 240, 0.192);
-    box-shadow: rgba(56, 136, 240, 0.192) 3px 3px 10px;
+.link-button:hover {
+    border-color: var(--segundary-color);
+    background-color: rgba(56, 136, 240, 0.1);
 }
 
 
@@ -218,8 +267,8 @@ span {
     width: 36rem;
     height: auto;
     border-radius: 10px;
-    box-shadow: rgba(56, 136, 240, 0.253) 0px 0px 60px;
-    transition: all 200ms ease-in-out;
+    box-shadow: 0px 10px 30px rgba(55, 134, 252, 0.2);
+    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
 }
 
 .p-about-me {
@@ -283,7 +332,8 @@ span {
 }
 
 .home-content-img .home:hover {
-    box-shadow: rgba(56, 136, 240, 0.493) 0px 0px 70px;
+    box-shadow: 0px 15px 45px rgba(55, 134, 252, 0.35);
+    transform: translateY(-3px);
 }
 
 .home-content-img {
@@ -370,7 +420,7 @@ span {
 }
 
 .contact {
-    width: 100%;
+    width: 90%;
 }
 
 .title-contact h1 {

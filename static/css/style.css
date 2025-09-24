@@ -1,11 +1,11 @@
 :root {
     --primary: #090d1b;
-    --primary-light: #0d1225;
+    --primary-light: #10152e;
     --segundary-color: #3786fc;
     --tertiary-color: #b9d7fd;
     --white: #ffffff;
     --overlay-color: #1a2242;
-    --gap: 3rem;
+    --gap: 2rem;
 }
 
 * {
@@ -43,6 +43,7 @@ p {
 hr {
     margin-top: 2rem;
     border-color: var(--segundary-color);
+    margin-left: 2.5rem;
 }
 
 a {
@@ -188,13 +189,47 @@ span {
     margin-top: 2.5rem;
 }
 
+.home-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin: 2.5rem 2rem 0 2rem;
+}
+
+.main-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.icon-home-github,
+.icon-home-linkedin {
+    font-size: 4rem;
+    color: var(--white);
+    transition: all 300ms ease-in-out;
+}
+
+.icon-home-github:hover,
+.icon-home-linkedin:hover {
+    transform: translateY(-3px);
+    color: var(--segundary-color);
+}
+
 .link-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--white);
-    padding: 1.7rem 2.5rem;
+    padding: 1.5rem 2.5rem;
     border: 2px solid rgba(56, 136, 240, 0.459);
     transition: all 200ms ease-in-out;
     border-radius: 5px;
@@ -225,23 +260,14 @@ span {
     transform: translateX(7px);
 }
 
+.link-button:hover {
+    border-color: var(--segundary-color);
+    background-color: rgba(56, 136, 240, 0.1);
+}
+
 .icon-home-github {
-    margin-top: 0.7rem;
     font-size: 4.5rem;
     transition: all 300ms ease-in-out;
-}
-
-.icon-home-linkedin {
-    transition: all 300ms ease-in-out;
-    transform: translateY(-13px);
-}
-
-.icon-home-github:hover {
-    transform: translateY(-3px);
-}
-
-.icon-home-linkedin:hover {
-    transform: translateY(-16px);
 }
 
 .link-button-thanks {
@@ -255,12 +281,6 @@ span {
     border-radius: 5px;
     margin: 3rem auto 0 auto;
 }
-
-.link-button:hover {
-    border-color: var(--segundary-color);
-    background-color: rgba(56, 136, 240, 0.1);
-}
-
 
 .home-content-img .home {
     max-width: 80%;
@@ -532,6 +552,14 @@ span {
         font-size: 55%;
     }
 
+    hr {
+        margin-left: 0;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
     .space {
         padding: 4rem 2rem;
     }
@@ -598,4 +626,14 @@ span {
         width: 80%;
     }
 
+    .main-actions {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .link-button {
+        width: 100%;
+        max-width: 35rem;
+    }
 }

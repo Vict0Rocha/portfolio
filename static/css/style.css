@@ -1,6 +1,6 @@
 :root {
     --primary: #090d1b;
-    --primary-light: #10152e;
+    /* --primary-light: #090d1b; */
     --segundary-color: #3786fc;
     --tertiary-color: #b9d7fd;
     --white: #ffffff;
@@ -43,7 +43,6 @@ p {
 hr {
     margin-top: 2rem;
     border-color: var(--segundary-color);
-    margin-left: 2.5rem;
 }
 
 a {
@@ -53,6 +52,12 @@ a {
 
 span {
     color: var(--segundary-color);
+}
+
+.hr-home {
+    margin-top: 2rem;
+    border-color: var(--segundary-color);
+    margin-left: 2.5rem;
 }
 
 .content-thanks {
@@ -358,6 +363,7 @@ span {
 
 .home-content-img {
     justify-self: start;
+    align-items: center;
 }
 
 .project-text {
